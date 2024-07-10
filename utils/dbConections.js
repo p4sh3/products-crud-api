@@ -9,7 +9,6 @@ if (process.env.NODE_ENV === 'development') {
 
 if (process.env.NODE_ENV === 'production') {
   credentials = path.join("/etc", "secrets", process.env.CREDENTIAL_FILE);
-  console.log("production")
 }
 const clientOptions = {
   tlsCertificateKeyFile: credentials,
